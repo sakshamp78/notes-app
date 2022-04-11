@@ -1,0 +1,9 @@
+temp.txt
+
+.vscode/
+
+*.log
+
+firebase.json
+
+.firebase

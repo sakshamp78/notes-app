@@ -1,0 +1,35 @@
+body{
+    /* background-color: #eee2dc; */
+    background-image: url(../PHOTOES/loginpage.jpeg);
+}
+
+h1{
+    padding: 0.5em 0;
+    font-family: Roboto, Arial, sans-serif;;
+    /* border-bottom: 1px solid double; */
+}
+
+.textbox{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+textarea{
+    resize: none;
+    padding: 1em;
+    font-family: Roboto, Arial, sans-serif;;
+    color: #3f37c9;
+    border-radius: 10px;
+    outline: none;
+    border: 2.5px solid rgb(170, 168, 168);
+}
+#inputtitle{
+    margin-bottom: 1em;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}

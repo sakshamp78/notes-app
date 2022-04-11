@@ -1,0 +1,274 @@
+body {
+  background-color: #eee2dc;
+  background-image: url(../PHOTOES/loginpage.jpeg);
+  background-attachment: fixed;
+  background-size: cover;
+  overflow-y: visible;
+}
+
+.sticky {
+  margin: 1em;
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  border: 1px solid black;
+  border-radius: 10px;
+  height: fit-content;
+}
+
+#topheading {
+  text-align: center;
+  font-family: Roboto, Arial, sans-serif;;
+  font-weight: bold;
+}
+
+.capital {
+  text-transform: capitalize;
+}
+
+#notes {
+  margin-top: 2em;
+  /* border: 3px solid #cbc0d3; */
+  /* height: 100vh; */
+  overflow-y: visible;
+}
+
+.prevClass {
+  /* this is the class given to each preview div */
+  border: 2px inherit whitesmoke;
+  margin: 0.8em 0.3em;
+  color: #202124;
+  padding: 0.5em;
+  background-color: #c1c8e42c;
+  /* border: 1px solid #ccc; */
+  /* border-bottom: 5px solid black; */
+  
+  /* border-right: 5px solid black; */
+  height: auto;
+  max-height: 30vh;
+  font-family: Roboto, Arial, sans-serif;;
+  font-size: 1.5em;
+  transition: all 0.3s;
+  overflow-y: auto;
+  border-radius: 0.75em;
+}
+
+.prevClass:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  /* background-color: #bab2b5; */
+  /* padding: 0.5em 0.5em; */
+  /* transform: translateY(-3px); */
+  overflow: auto;
+  box-sizing: border-box;
+  color: #562ea0;
+  background-color: #939ec752;
+}
+
+
+
+.titlediv {
+  padding-left: 1em;
+  margin-bottom: 0.15em;
+  transition: all 0.5s ease-out;
+}
+
+.titledivhover {
+  color: #202124;
+  border-left: 5px solid #5680e9;
+  background-color: #a2b4df5e;
+  border-top-right-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  /* width: 40%; */
+}
+
+.btndiv {
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  /* transition: all .5s; */
+}
+div button {
+  margin: 0.005em 0.5em;
+}
+
+
+a[href = "#"] {
+  /* border: 1px solid black; */
+  margin: 5px !important;
+  /* transition: all 0.1s; */
+}
+
+a:hover[href = "#"] {
+  transform: translateY(-2px);
+}
+
+.none {
+  visibility: hidden;
+}
+
+.nopointer {
+  cursor: default;
+  /* padding-bottom: 0.075em  !important; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-end; */
+  height: min-content;
+}
+
+.btndiv span {
+  display: flex;
+  align-self: flex-end;
+  margin-bottom: 0.3em;
+}
+/* img{
+  display: inline-flex;
+}
+#username{
+  display: inline-flex;
+  
+  flex-wrap: wrap;
+} */
+
+#userspan{
+  margin: 0.5em;
+}
+
+/* .underline{
+  text-decoration: underline solid rgba(135, 39, 190, 0.397);
+} */
+
+#flag {
+  border: 1px solid black;
+  border-radius: 0.75em;
+  background-color: rgb(231, 17, 17);
+  color: white;
+  padding: 0.5em 0.75em;
+  font-size: larger;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  position: absolute;
+}
+#flagdiv {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 991px) {
+  #navbartoggler{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .navbar-toggler{
+    position: relative;
+    top: -1.5em;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #username{
+    margin: auto;
+    display: block;
+  }
+  img{
+    margin: auto;
+    display: block;
+  }
+  #t{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .btndiv{
+    justify-content: center;
+  }
+  #userspan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  #navbartoggler{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .navbar-toggler{
+    position: relative;
+    top: -0.5em;
+  }
+}
+
+/* LOADING ANIMATION CSS */
+
+.loader {
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  position: relative;
+  border: 4px solid #fff;
+  top: 50%;
+  animation: loader 2s infinite ease;
+  margin-bottom: 0.3em;
+}
+
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+  margin-bottom: 0.3em;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(180deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+
+  25% {
+    height: 0%;
+  }
+
+  50% {
+    height: 100%;
+  }
+
+  75% {
+    height: 100%;
+  }
+
+  100% {
+    height: 0%;
+  }
+}

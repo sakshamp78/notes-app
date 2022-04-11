@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/homePage.css">
+
+    <title>Notes-App</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky">
+        <div class="container-fluid" id="t">
+            <div class="container-fluid">
+                <span  id="userspan" class="navbar-brand" href="#">
+                    <img src="../PHOTOES/logo-fullsize.png" alt="" width="70" height="60"
+                        class="align-top">
+                    <span id="username">User Name</span>
+                </span>
+            </div>
+            <div id="navbartoggler">
+                <button  class=" navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin: auto;">
+                <form class="d-flex">
+                    <button id="addnote" class="btn btn-outline-success" type="button" style="margin-right: 1em; margin-top: 0.5em;">Add Note</button>
+                    <a id="userManual" class="btn btn-outline-success" style="margin-right: 1em; margin-top: 0.5em;" href="https://drive.google.com/file/d/1ZD7FP-wbjNJdmgVC2iTj8tLRkWBQvrV4/view?usp=sharing" target="_blank">User Manual</a>
+                    <button id="signout" class="btn btn-outline-success" type="submit" style="margin-right: 1em; margin-top: 0.5em;">Sign-Out</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <h1 id="topheading">Notes</h1>
+    <!-- THIS IS THE DIV TO STORE NOTES -->
+    <div class="container" id="notes">
+        <div id="flagdiv">
+            <div id="flag">
+                <span class="loader">
+                    <span class="loader-inner"></span>
+                </span>
+                &nbsp &nbspLoading ...
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+        integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+        crossorigin="anonymous"></script>
+    </script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-firestore.js"></script>
+
+    <script src="../JAVASCRIPT/homePage.js"></script>
+
+</body>
+
+</html>
